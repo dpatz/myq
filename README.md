@@ -12,7 +12,7 @@ garage doors and gates.
 
 The `myq` tool can be installed with:
 
-    go install github.com/joeshaw/myq/cmd/myq@latest
+    go install github.com/dpatz/myq/cmd/myq@latest
 
 Run `myq` by itself to see full usage information.
 
