@@ -315,10 +315,7 @@ func (s *Session) SetDoorState(serialNumber string, action string) error {
 		var body struct{}
 
 		if err := s.apiRequestWithRetry(req, &body); err != nil {
-			if isStatus(err, http.StatusNotFound) {
-				continue
-			}
-			return err
+			continue
 		}
 
 		return nil
